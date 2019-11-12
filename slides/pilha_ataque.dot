@@ -1,0 +1,18 @@
+digraph{
+	stack [
+		shape=record
+		label="{Pilha|<a> Aplicação|<t> Transporte|<r> Rede|<e> Enlace | <f> Física}"
+	];
+	attacks [
+		shape=record
+		label="{Ataques|<a>XSS|<t>Heartbleed|<r>*|<e>Arp Spoofing|<f>*}"
+			
+	];
+	
+
+	attacks:a->stack:a;
+	attacks:t->stack:t;
+	attacks:e->stack:e;
+
+	
+}

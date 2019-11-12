@@ -1,0 +1,28 @@
+digraph{
+	stack [
+		shape=record
+		label="{Pilha|<a> Aplicação|<t> Transporte|<r> Rede|<e> Enlace | <f> Física}"
+	];
+	protocols [
+		shape=record
+		label="{Protocolos|<a>HTTP|<t>TCP|<r>IP|<e>ARP|<f> IEEE 802.11}"
+			
+	];
+	implementations[
+		shape=record
+		label="{Implementações|<a>Apache|<t>SO|<r>SO|<e>SO|<f> Driver do SO}"
+	];
+	
+	stack:a->protocols:a;
+	stack:t->protocols:t;
+	stack:r->protocols:r;
+	stack:e->protocols:e;
+	stack:f->protocols:f;
+
+	protocols:a->implementations:a;
+	protocols:t->implementations:t;
+	protocols:r->implementations:r;
+	protocols:e->implementations:e;
+	protocols:f->implementations:f;	
+	
+}
