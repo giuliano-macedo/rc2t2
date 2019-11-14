@@ -5,14 +5,15 @@ digraph{
 	];
 	attacks [
 		shape=record
-		label="{Ataques|<a>XSS|<t>Heartbleed|<r>*|<e>Arp Spoofing|<f>*}"
+		label="{Ataques|<a>XSS|<t>Heartbleed|<r> Ataque de fragmentação|<e>Arp Spoofing|<f> Gêmeo malvado}"
 			
 	];
 	
 
 	attacks:a->stack:a;
 	attacks:t->stack:t;
+	attacks:r->stack:r;
 	attacks:e->stack:e;
-
+	attacks:f->stack:f;
 	
 }

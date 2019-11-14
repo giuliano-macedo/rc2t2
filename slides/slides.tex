@@ -66,12 +66,11 @@
 			\item Buffer overlfow
 			\item DoS
 			\item Execução de código
-			\item Corrupção de Memória
 			\item Sql Injection
 			\item XSS
 			\item Bypassing
 			\item Ganhar informações
-			\item Elevar previlégio
+			\item Elevar privilégio
 			\item etc
 		\end{itemize}
 	\end{itemize}
@@ -85,25 +84,51 @@
 
 \section{Ataques}
 \begin{frame}
-	\frametitle{Ataques}
-	\begin{itemize}
-		\item XSS (Cross server scripting)
-		\item Heartbleed (Buffer overflow no protocolo TLS)
-		\item ARP Spoofing (Manipulação de servidores/clientes ARP com o fim de espionagem)
-	\end{itemize}
+	\frametitle{Exemplos de ataques e correspondência com o modelo de redes de 5 camadas}
 	\begin{figure}[htp]
 		\includegraphics[width=8cm]{pilha_ataque.pdf}
 	\end{figure}
 \end{frame}
+\begin{frame}
+	\frametitle{Exploits que irei mostrar}
+	\begin{itemize}
+		\item XSS (Cross server scripting)
+		\item ARP Spoofing (Manipulação de servidores/clientes ARP com o fim de espionagem)
+	\end{itemize}
+\end{frame}
 
 \subsection{XSS}
 \begin{frame}
-\frametitle{XSS}
+	\frametitle{Exemplo}
 \end{frame}
 
-\subsection{Heartbleed}
 \begin{frame}
-\frametitle{Heartbleed}
+	\frametitle{Mitigação}
+	Problemas:
+	\begin{enumerate}
+		\item O usuário deve ter o poder de ainda estilizar o texto
+		\item Tags de injeção de JS devem ser ignoradas
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Minha solução}
+	Solução para o problema 1\\
+	(O usuário deve ter o poder de ainda estilizar o texto)\\
+	Usar outra linguagem de marcação de texto como o \textbf{Markdown}
+	\begin{figure}[htp]
+		\includegraphics[width=10cm]{markdown_example.png}
+	\end{figure}
+
+\end{frame}
+
+\begin{frame}
+	\frametitle{Minha solução}
+	Solução para o problema 2\\
+	(Tags de injeção de JS devem ser ignoradas)\\
+	Limitar o alfabeto do usuário:
+	\textbf{Apenas os caracteres alfanuméricos com acento, números, e os caracteres \# e * serão aceitos}
+
 \end{frame}
 
 \subsection{ARP Spoofing}
