@@ -1,0 +1,9 @@
+graph{
+	h1[label="anfitrião 1\nip=10.0.0.1\nmac=#1"]
+	h2[label="anfitrião 2\nip=10.0.0.2\nmac=#2"]
+	s1[label="switch\nip=10.0.0.3\nmac=#3"]
+
+	h2--s1;
+	h1--s1;
+
+}

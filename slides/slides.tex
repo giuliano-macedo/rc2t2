@@ -127,13 +127,51 @@
 	Solução para o problema 2\\
 	(Tags de injeção de JS devem ser ignoradas)\\
 	Limitar o alfabeto do usuário:
-	\textbf{Apenas os caracteres alfanuméricos com acento, números, e os caracteres \# e * serão aceitos}
+	\textbf{Apenas os caracteres alfanuméricos com acento, números, os caracteres \# e * serão aceitos}
 
 \end{frame}
 
 \subsection{ARP Spoofing}
 \begin{frame}
-\frametitle{ARP Spoofing}
+\frametitle{Exemplo}
+\begin{figure}[htp]
+		\includegraphics[width=10cm]{topo.pdf}
+	\end{figure}
 \end{frame}
+
+\begin{frame}
+\frametitle{ARP Spoofing}
+	site HTTP não seguro de propósito:
+	\url{http://testing-ground.scraping.pro/login}
+\end{frame}
+
+\begin{frame}
+\frametitle{Mitigação}
+	Softwares de defesa :
+	\begin{itemize}
+		\item Agnitum Outpost Firewall
+		\item AntiARP
+		\item Antidote
+		\item Arp\_Antidote
+		\item Arpalert
+		\item Etc
+	\end{itemize}
+	Outra solução\\
+	\textbf{HTTPS}
+\end{frame}
+
+\section{Referências}
+\begin{frame}
+	\frametitle{Referências}
+	\bibliographystyle{amsalpha}
+	\bibliography{references.bib}
+	\nocite{*}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Obrigado}
+	Código fonte dos exploits e desse slide estão disponíveis no repositório github:\\ \url{https://github.com/llpinokio/rc2t2}
+\end{frame}
+
 
 \end{document}
