@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forum seguro</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+<div id="main_container">
+	<h1>Forúm bem seguro</h1>
+	{body_text}
+</div>
+<br>
+<div id="comments_container">
+	<h1>Comentários</h1>
+	{comments}
+	<h2>Escreva seu comentário</h2>
+	<form method="POST" action="comment">
+		nome:<br><input type="text" name="nome" pattern="\w+"> <br><br>
+		Comentário:<br><textarea cols="40" rows="5" name="comentario"> </textarea> <br><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</div>
+</body>
+</html>
